@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/updownContainer"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUESTION"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Feedback"
+                android:visibility="gone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/sendFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Send feedback"
+            android:visibility="gone" />
+
+        <com.freecats.demo.view.TextViewExpandableAnimation
+            android:id="@+id/prof_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tvea_expandBitmap="@android:drawable/arrow_down_float"
+            app:tvea_expandLines="3"
+            app:tvea_shrinkBitmap="@android:drawable/arrow_up_float"
+            app:tvea_textContentColor="#000000"
+            app:tvea_textContentSize="20sp"
+            app:tvea_textExpand="more..."
+            app:tvea_textShrink="less"
+            app:tvea_textStateColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/updownContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/container"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:mrl_rippleOverlay="true">
+
+        <ImageView
+            android:id="@+id/upDown"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/arrow_down_float" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+</RelativeLayout>

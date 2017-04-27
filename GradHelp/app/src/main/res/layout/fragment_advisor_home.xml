@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/ic_logo"
+    android:gravity="center"
+
+    tools:context="com.uta.gradhelp.Activities.HomeActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="You have\n no appointment today"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textContainer"
+        android:layout_margin="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/sessionDetailButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="My Schedule"
+                    android:textColor="#ffffff" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/advFeedbackButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="View Feedback"
+                    android:textColor="#ffffff" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    app:mrl_rippleOverlay="true">
+
+                    <Button
+                        android:id="@+id/faqButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="FAQ"
+                        android:textColor="#ffffff" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    app:mrl_rippleOverlay="true">
+
+                    <Button
+                        android:id="@+id/feedbackButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Feedback"
+                        android:textColor="#ffffff" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
