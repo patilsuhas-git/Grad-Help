@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "852836843233",
+    "firebase_url": "https://gradhelp-a0261.firebaseio.com",
+    "project_id": "gradhelp-a0261",
+    "storage_bucket": "gradhelp-a0261.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852836843233:android:8929dd4b41cae15f",
+        "android_client_info": {
+          "package_name": "com.uta.gradhelp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852836843233-65mgdmjtvevmgdo9hna8s8hoatdf32nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6lIUDGN1uVtk-_aVRpYS_Iuj-JtAiGh4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
